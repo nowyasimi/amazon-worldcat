@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "WorldCat Lookup for Amazon",
+  "version": "0.10",
+
+  "description": "A lightweight extension that automatically checks if your
+                  WorldCat library, or nearby libraries, have the Amazon book
+                  you are interested in.",
+
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+    },
+  "author": "Nadeem Nasimi",
+  "background": {
+  },
+  "content_scripts": [{
+      "matches": ["http://www.amazon.com/*"],
+      "css": [],
+      "js": ["jquery.min.js", "main.js"]
+  }],
+  "converted_from_user_script": "",
+  "devtools_page": "",
+  "file_browser_handlers": [],
+  "homepage_url": "http://path/to/homepage",
+  "import": [],
+  "input_components": "",
+  "minimum_chrome_version": "20.0",
+  "nacl_modules": [],
+  "offline_enabled": true,
+  "optional_permissions": ["tabs"],
+  "options_page": "options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
+  "platforms": "",
+  "plugins": [],
+  "requirements": {},
+  "sandbox": [],
+  "short_name": "AmazonWorldCat",
+  "signature": "",
+  "tts_engine": {},
+  "update_url": "http://path/to/updateInfo.xml",
+  "version_name": "",
+  "web_accessible_resources": []
+}
